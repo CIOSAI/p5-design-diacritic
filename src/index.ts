@@ -42,8 +42,10 @@ const sketch = (p: p5) => {
     p.setAttributes("antialias", true)
     p.smooth()
     p.createCanvas(win.s, win.s, p.WEBGL)
+    p.pixelDensity(2)
     seagrass_out = p.createGraphics(win.s, win.s, p.WEBGL)
     seagrass_out.setAttributes("antialias", true)
+    seagrass_out.pixelDensity(2)
     seagrass_out.smooth()
 	  seagrass_out.background(0, 0)
 
